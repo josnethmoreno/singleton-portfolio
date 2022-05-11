@@ -1,0 +1,5 @@
+.Stack-wrapper{
+	display: flex;
+	flex-direction: column;
+	gap: var(--margin-1);
+}

@@ -1,0 +1,12 @@
+.List-name{
+	margin-bottom: var(--margin-2);
+}
+
+.List-items{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: var(--margin-4);
+	font-size: 5.5rem;
+	line-height: 0;
+}

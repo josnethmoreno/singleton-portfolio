@@ -1,0 +1,13 @@
+.Social-links{
+	display: flex;
+	gap: 1rem;
+}
+
+.Social-link{
+	color: var(--accent);
+	font-size: 1.8rem;
+}
+
+.Social-link:hover{
+	transform: scale(1.1);
+}

@@ -1,0 +1,21 @@
+.Contact{
+	text-align: center;
+}
+
+.Contact-h3{
+	margin-bottom: var(--margin-2);
+}
+
+.Contact-description{
+	max-width: 520px;
+	margin-bottom: var(--margin-3);
+}
+
+.Contact-button{
+	margin-bottom: var(--margin-2);
+}
+
+.Contact-social{
+	display: flex;
+	justify-content: center;
+}

@@ -1,9 +1,14 @@
+import Nav from '../elements/Nav'
+import '@/stylesheets/sections/Header.css'
 
-
-export default function Header() {
+const Header = () => {
 	return(
-		<div className="Header">
-			Header
-		</div>
+		<header className="Header">
+			<div className="container">
+				<Nav />
+			</div>
+		</header>
 	);
 }
+
+export default Header
