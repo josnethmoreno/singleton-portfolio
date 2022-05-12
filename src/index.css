@@ -11,7 +11,6 @@ html{
 }
 
 body{
-	color: var(--font-color);
 	font-family: var(--font);
   line-height: 1.75;
 }
@@ -53,12 +52,16 @@ small, .text_small{
 
 a{
 	display: inline-block;
-	color: var(--secondary);
+	color: var(--accent);
 	text-decoration: none;
 }
 
+ul{
+	list-style: none;
+}
+
 button{
-	color: var(--secondary);
+	color: var(--accent);
 	background: transparent;
 	cursor: pointer;
 	line-height: 0;
@@ -82,9 +85,4 @@ button{
 .section-head{
 	margin-bottom: var(--margin-1);
 	font-weight: var(--bold);
-	text-transform: uppercase;
-}
-
-.section-head span{
-	font-weight: var(--light);
 }

@@ -1,4 +1,5 @@
 import { useState, useRef } from 'react'
+import useLocalStorage from 'use-local-storage';
 import { RiMoonLine,  RiMenuFill} from "react-icons/ri";
 import '@/stylesheets/elements/Nav.css'
 
@@ -22,18 +23,18 @@ const Nav = () => {
 			<div className="Nav-menu" data-show={menu} onClick={(e) => handleMenu(e)}>
 				<div className="Nav-menu-wrapper">
 					<a className="Nav-link" href="#work" onClick={() => setMenu(false)}>
-						<span>01 </span>Work.
+						Work.
 					</a>
 					<a className="Nav-link" href="#stack" onClick={() => setMenu(false)}>
-						<span>02 </span>Stack.
+						Stack.
 					</a>
 					<a className="Nav-link" href="#contact" onClick={() => setMenu(false)}>
-						<span>03 </span>Contact.
+						Contact.
 					</a>
 				</div>
 			</div>
 			<div className="Nav-buttons">
-				<button className="Nav-switch">
+				<button className="Nav-switch" onClick={() => switchTheme()}>
 					<RiMoonLine />
 				</button>
 				<button className="Nav-toggle" onClick={() => setMenu(prevMenu => !prevMenu)}>

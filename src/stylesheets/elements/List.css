@@ -10,3 +10,49 @@
 	font-size: 5.5rem;
 	line-height: 0;
 }
+
+.List-item{
+	position: relative;
+}
+
+.List-tooltip{
+	visibility: hidden;
+	position: absolute;
+	top: -15%;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: .15rem .55rem;
+	border-radius: 5px;
+	color: var(--primary);
+	background-color: var(--accent);
+	font-size: var(--text-small);
+	line-height: initial;
+	opacity: 0;
+	transition: .3s ease;
+}
+
+.List-tooltip::before{
+	content: '';
+	position: absolute;
+	bottom: -4px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 4px;
+	height: 4px;
+	border-style: solid;
+  border-width: 4px 4px 0 4px;
+  border-color: var(--accent) transparent transparent transparent;
+}
+
+.List-item:hover .List-tooltip{
+	visibility: visible;
+	top: -22%;
+	opacity: 1;
+}
+
+
+@media (min-width: 768px) {
+	.List-items{
+		justify-content: left;
+	}
+}

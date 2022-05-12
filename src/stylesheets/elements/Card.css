@@ -1,8 +1,11 @@
 .Card{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 	padding: 1.5rem;
 	width: clamp(320px, 100%, 400px);
 	aspect-ratio: 1 / 1;
-	border: 5px solid var(--font-color);
+	border: 5px solid var(--accent);
 	border-radius: 50px;
 }
 
@@ -26,6 +29,7 @@
 	position: relative;
 	font-size: var(--h4);
 	font-weight: var(--bold);
+	overflow: hidden;
 }
 
 .Card-link-project::before{
@@ -34,7 +38,12 @@
 	bottom: 4px;
 	height: 4px;
 	width: 100%;
-	background-color: var(--font-color);
+	background-color: var(--accent);
+	transition: .2s ease;
+}
+
+.Card-link-project:hover::before{
+	transform: translateX(-100%);
 }
 
 .Card-icon-arrow {
@@ -52,4 +61,10 @@
 
 .Card-icon-github:hover{
 	transform: scale(1.1);
+}
+
+@media (min-width: 576px) {
+	.Card{
+		padding: 3rem;
+	}
 }

@@ -4,7 +4,7 @@ import '@/stylesheets/elements/Button.css'
 const Button = ({ text }) => {
 	return(
 		<button className="Button">
-			{text}
+			<a className="Button-text" href={`mailto:josnethmoreno@gmail.com`}>{ text }</a>
 		</button>
 	);
 }

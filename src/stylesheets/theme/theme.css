@@ -23,10 +23,6 @@
 		69%,
 		85%);
 
-	/* Theme light */
-	--background-color: var(--ghost-white);
-	--font-color: var(--space-cadet);
-
 	/* Typography */
 	--font: 'Open Sans';
 
@@ -50,3 +46,15 @@
 	--margin-3: 30px;
 	--margin-4: 15px;
 }	
+
+/* Theme Light */
+:root{
+	--primary: var(--ghost-white);
+	--accent: var(--space-cadet);
+}
+
+/* Theme Dark */
+[data-theme='dark'] {
+  --primary: var(--space-cadet);
+	--accent: var(--periwinkle-crayola);
+}

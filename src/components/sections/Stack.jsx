@@ -5,7 +5,7 @@ const Stack = () => {
 	return(
 		<section className="Stack section" id="stack">
 			<div className="container">
-				<h1 className="Stack-h1 section-head"><span>02</span> STACK</h1>
+				<h2 className="Stack-h2 section-head">Stack.</h2>
 				<div className="container-sm">
 					<div className="Stack-wrapper">
 						<List name="Front End"/>

@@ -1,3 +1,4 @@
 .App{
-  background-color: var(--background-color);
+  color: var(--accent);
+  background-color: var(--primary);
 }
