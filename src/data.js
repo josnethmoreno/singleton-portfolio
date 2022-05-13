@@ -1,3 +1,5 @@
+import * as icon  from 'react-icons/si'
+
 const profile = {
 	name: 'Carlos Montenegro',
 	role: 'Front End Developer',
@@ -7,11 +9,26 @@ const profile = {
 const email = 'example@example.com';
 
 const social = [
-	{ icon: 'SiGithub', link: 'https://github.com' },
-	{ icon: 'SiMedium', link: 'https://www.medium.com/' },
-	{ icon: 'SiTwitter', link: 'https://www.twitter.com/' },
-	{ icon: 'SiInstagram', link: 'https://www.instagram.com/' },
+	{ icon: icon.SiGithub, link: 'https://github.com' },
+	{ icon: icon.SiMedium, link: 'https://www.medium.com/' },
+	{ icon: icon.SiInstagram, link: 'https://www.twitter.com/' },
+	{ icon: icon.SiInstagram, link: 'https://www.instagram.com/' },
 ];
+
+const work = [
+	{
+		name: 'Todo app',
+		description: 'Vestibulum mattis tincidunt ligula in tem vestibulum tristique sapien at odio euis condimentum condimentum.',
+		stack: [
+			{ icon: icon.SiHtml5, name: 'HTML' },
+			{ icon: icon.SiCss3, name: 'CSS' },
+			{ icon: icon.SiJavascript, name: 'Javascript' },
+			{ icon: icon.SiReact, name: 'ReactJS'}
+		]
+		livePreview: 'https://example.com',
+		liveSource: 'https://github.com',
+	},
+]
 
 /*
 const work = [
@@ -176,4 +193,4 @@ const stack = [
 
 */
 
-export { profile, social }
+export { profile, social, export, icon }
