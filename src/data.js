@@ -11,7 +11,7 @@ const email = 'example@example.com';
 const social = [
 	{ icon: icon.SiGithub, link: 'https://github.com' },
 	{ icon: icon.SiMedium, link: 'https://www.medium.com/' },
-	{ icon: icon.SiInstagram, link: 'https://www.twitter.com/' },
+	{ icon: icon.SiTwitter, link: 'https://www.twitter.com/' },
 	{ icon: icon.SiInstagram, link: 'https://www.instagram.com/' },
 ];
 
@@ -23,8 +23,8 @@ const work = [
 			{ icon: icon.SiHtml5, name: 'HTML' },
 			{ icon: icon.SiCss3, name: 'CSS' },
 			{ icon: icon.SiJavascript, name: 'Javascript' },
-			{ icon: icon.SiReact, name: 'ReactJS'}
-		]
+			{ icon: icon.SiReact, name: 'ReactJS' },
+		],
 		livePreview: 'https://example.com',
 		liveSource: 'https://github.com',
 	},
@@ -193,4 +193,4 @@ const stack = [
 
 */
 
-export { profile, social, export, icon }
+export { profile, social, work, icon }
