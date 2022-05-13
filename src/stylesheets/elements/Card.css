@@ -10,13 +10,14 @@
 }
 
 .Card-h3{
+	line-height: 0;
 	margin-bottom: var(--margin-4);
 }
 
 .Card-tech{
 	display: flex;
-	gap: .3rem;
-	font-size: 1.6rem;
+	gap: .5rem;
+	font-size: 1.3rem;
 	margin-bottom: var(--margin-3);
 }
 
@@ -56,7 +57,7 @@
 }
 
 .Card-icon-github{
-	font-size: 2.5rem;
+	font-size: 2.1rem;
 }
 
 .Card-icon-github:hover{

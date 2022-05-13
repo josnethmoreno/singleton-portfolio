@@ -1,26 +1,29 @@
-import { DiHtml5, DiCss3, DiJavascript1, DiReact, DiGithubBadge } from "react-icons/di";
-import { RiArrowRightLine } from "react-icons/ri";
+import { v4 as uuidv4 } from 'uuid'
+import { SiGithub } from "react-icons/si"
+import { RiArrowRightLine } from "react-icons/ri"
+import Icon from '@/components/elements/Icon.jsx'
 import '@/stylesheets/elements/Card.css'
 
-const Card = () => {
+const Card = ({ name, description, stack, linkProject, linkGithub }) => {
 	return(
 		<div className="Card">
-			<h3 className="Card-h3">Todo project</h3>
+			<h3 className="Card-h3">{name}</h3>
 			<p className="Card-description">
-				Vestibulum mattis tincidunt ligula in tem vestibulum tristique sapien at odio euis condimentum condimentum. 
+				{description} 
 			</p>
 			<div className="Card-tech">
-				<DiHtml5 />
-				<DiCss3 />
-				<DiJavascript1 />
-				<DiReact />
+				{
+					stack.map((s) => 
+						<Icon icon={s.icon} key={uuidv4()} />
+					)
+				}
 			</div>
 			<div className="Card-links">
-				<a href="#" className="Card-link-project">
+				<a href={linkProject} className="Card-link-project">
 					View Project <RiArrowRightLine className="Card-icon-arrow"/>
 				</a>
-				<a href="#" className="Card-link-github">
-					<DiGithubBadge className="Card-icon-github"/>
+				<a href={linkGithub} className="Card-link-github">
+					<SiGithub className="Card-icon-github"/>
 				</a>
 			</div>
 		</div>

@@ -6,8 +6,8 @@
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	gap: var(--margin-4);
-	font-size: 5.5rem;
+	gap: var(--margin-3);
+	font-size: 4.5rem;
 	line-height: 0;
 }
 
@@ -18,7 +18,7 @@
 .List-tooltip{
 	visibility: hidden;
 	position: absolute;
-	top: -15%;
+	top: -25%;
 	left: 50%;
 	transform: translateX(-50%);
 	padding: .15rem .55rem;
@@ -46,7 +46,7 @@
 
 .List-item:hover .List-tooltip{
 	visibility: visible;
-	top: -22%;
+	top: -40%;
 	opacity: 1;
 }
 

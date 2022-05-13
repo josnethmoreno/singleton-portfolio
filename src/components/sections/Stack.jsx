@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from 'uuid'
+import { stack } from '@/data.js'
 import List from '../elements/List.jsx';
 import '@/stylesheets/sections/Stack.css'
 
@@ -8,8 +10,11 @@ const Stack = () => {
 				<h2 className="Stack-h2 section-head">Stack.</h2>
 				<div className="container-sm">
 					<div className="Stack-wrapper">
-						<List name="Front End"/>
-						<List name="Back End"/>
+						{
+							stack.map((list) => 
+								<List name={list.name} items={list.items} key={uuidv4()}/>
+							)
+						}
 					</div>
 				</div>
 			</div>

@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from 'uuid'
+import { work } from '@/data.js'
 import Card from '@/components/elements/Card'
 import '@/stylesheets/sections/Work.css'
 
@@ -9,10 +11,18 @@ import '@/stylesheets/sections/Work.css'
 				<h2 className="Work-h2 section-head">Work.</h2>
 				<div className="container-sm">
 					<div className="Work-wrapper">
-						<Card />
-						<Card />
-						<Card />
-						<Card />
+						{
+							work.map((c) => 
+								<Card 
+									name={c.name} 
+									description={c.description}
+									stack={c.stack}
+									linkProject={c.linkProject}
+									linkGithub={c.linkGithub}
+									key={uuidv4()}
+								/>
+							)
+						}
 					</div>
 				</div>
 			</div>

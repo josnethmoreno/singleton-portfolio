@@ -1,35 +1,20 @@
-import { DiHtml5, DiCss3, DiBootstrap, DiSass, DiJavascript1, DiReact, DiGithubBadge } from "react-icons/di";
+import { v4 as uuidv4 } from 'uuid'
+import Icon from '@/components/elements/Icon.jsx'
 import '@/stylesheets/elements/List.css'
 
-const List = ({ name }) => {
+const List = ({ name, items }) => {
 	return(
 		<div className="List">
 			<h3 className="List-name">{name}</h3>
 			<ul className="List-items">
-				<li className="List-item">
-					<span className="List-tooltip">HTML</span>
-					<DiHtml5 />
-				</li>
-				<li className="List-item">
-					<span className="List-tooltip">CSS</span>
-					<DiCss3 />
-				</li>
-				<li className="List-item">
-					<span className="List-tooltip">Bootstrap</span>
-					<DiBootstrap />
-				</li>
-				<li className="List-item">
-					<span className="List-tooltip">SASS</span>
-					<DiSass />
-				</li>
-				<li className="List-item">
-					<span className="List-tooltip">Javascript</span>
-					<DiJavascript1 />
-				</li>
-				<li className="List-item">
-					<span className="List-tooltip">RactJS</span>
-					<DiReact />
-				</li>
+				{
+					items.map((i) => 
+						<li className="List-item" key={uuidv4()}>
+							<span className="List-tooltip">{i.name}</span>
+							<Icon icon={i.icon} />
+						</li>
+					)
+				}
 			</ul>
 		</div>
 	);

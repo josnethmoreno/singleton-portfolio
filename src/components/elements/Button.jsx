@@ -1,10 +1,12 @@
 import '@/stylesheets/elements/Button.css'
 
 
-const Button = ({ text }) => {
+const Button = ({ text, link }) => {
 	return(
-		<button className="Button">
-			<a className="Button-text" href={`mailto:josnethmoreno@gmail.com`}>{ text }</a>
+		<button className="Button" href={`mailto:${link}`}>
+			<a className="Button-text">
+				{ text }
+			</a>
 		</button>
 	);
 }
