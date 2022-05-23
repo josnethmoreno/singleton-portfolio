@@ -13,6 +13,8 @@ const social = [
 	{ icon: icon.SiInstagram, link: 'https://www.instagram.com/' },
 ];
 
+const brand = 'Carlos'
+
 const work = [
 	{
 		name: 'Todo app',
@@ -94,4 +96,4 @@ const contact = {
 	email: 'example@email.com'
 }
 
-export { profile, social, work, stack, contact }
+export { profile, social, work, stack, contact, brand }

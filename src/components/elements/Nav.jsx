@@ -1,11 +1,11 @@
 import { useState, useRef, useContext } from 'react'
-import { RiMoonLine, RiSunLine, RiMenuFill, RiCloseLine} from "react-icons/ri"
+import { RiMoonLine, RiSunLine, RiMenuFill, RiCloseLine } from "react-icons/ri"
 import { ThemeContext } from '/src/contexts/ThemeContext.jsx'
+import { brand } from '/src/data.js'
 import '/src/stylesheets/elements/Nav.css'
 
 const Nav = () => {
 	const { theme, switchTheme } = useContext(ThemeContext)
-
 	const [menu, setMenu] = useState(false);
 
 	(menu)
@@ -20,7 +20,7 @@ const Nav = () => {
 	return(
 		<nav className="Nav">
 			<div className="Nav-brand">
-				<a className="Nav-brand-link" href="#">Singleton</a>
+				<a className="Nav-brand-link" href="#">{brand}</a>
 			</div>
 			<div className="Nav-menu" data-show={menu} onClick={(e) => handleMenu(e)}>
 				<div className="Nav-menu-wrapper">

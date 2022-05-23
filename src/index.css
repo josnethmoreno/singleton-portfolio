@@ -62,7 +62,7 @@ ul{
 
 button{
 	color: var(--accent);
-	background: transparent;
+	background: none;
 	cursor: pointer;
 	line-height: 0;
 }

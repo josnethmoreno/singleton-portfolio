@@ -3,32 +3,10 @@
 	text-align: center;
 }
 
-.Footer-author-link{
-	margin-left: .5rem;
+.Footer-brand{
 	font-weight: var(--bold);
 }
 
-.Footer-stats{
-	display: flex;
-	justify-content: center;
-	gap: 1rem;
-}
-
-.Footer-stats > div{
-	display: flex;
-	align-items: center;
-	gap: .2rem;
-}
-
-.Footer-stats-icon{
-	display: inline-block;
-	font-size: 1.3rem;
-	line-height: 0;
-}
-
-@media (min-width:  576px) {
-	.Footer .container{
-		display: flex;
-		justify-content: space-between;
-	}
+.Footer-brand span{
+	font-weight: var(--normal);
 }
