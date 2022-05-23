@@ -6,8 +6,6 @@ const profile = {
 	description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed facere, itaque excepturi, necessitatibus cum ex nisi.',
 };
 
-const email = 'josnethmoreno@gmail.com';
-
 const social = [
 	{ icon: icon.SiGithub, link: 'https://github.com' },
 	{ icon: icon.SiMedium, link: 'https://www.medium.com/' },
@@ -91,4 +89,9 @@ const stack = [
 	},
 ]
 
-export { profile, social, work, stack, email, icon }
+const contact = {
+	description: 'Tenetur laudantium? Aliquid ipsum perferendis blanditiis non. Adipisci eos numquam reiciendis, rerum, quo similique reprehenderit. Adipisci eos numquam reiciendis',
+	email: 'example@email.com'
+}
+
+export { profile, social, work, stack, contact }

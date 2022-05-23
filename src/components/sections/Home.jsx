@@ -1,6 +1,6 @@
-import '@/stylesheets/sections/Home.css'
-import SocialLinks from '@/components/elements/SocialLinks'
-import { profile } from '@/data.js'
+import '/src/stylesheets/sections/Home.css'
+import SocialLinks from '/src/components/elements/SocialLinks'
+import { profile } from '/src/data.js'
 
  const Home = () => {
 

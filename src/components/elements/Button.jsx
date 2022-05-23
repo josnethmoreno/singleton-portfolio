@@ -1,11 +1,10 @@
-import '@/stylesheets/elements/Button.css'
-
+import '/src/stylesheets/elements/Button.css'
 
 const Button = ({ text, link }) => {
 	return(
-		<button className="Button" href={`mailto:${link}`}>
-			<a className="Button-text">
-				{ text }
+		<button className="Button">
+			<a className="Button-link" href={`mailto:${link}`}>
+				<span className="Button-text">{ text }</span>
 			</a>
 		</button>
 	);

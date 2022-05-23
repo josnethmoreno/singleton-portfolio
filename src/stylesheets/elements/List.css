@@ -16,7 +16,6 @@
 }
 
 .List-tooltip{
-	visibility: hidden;
 	position: absolute;
 	top: -25%;
 	left: 50%;
@@ -28,6 +27,7 @@
 	font-size: var(--text-small);
 	line-height: initial;
 	opacity: 0;
+	visibility: hidden;
 	transition: .3s ease;
 }
 

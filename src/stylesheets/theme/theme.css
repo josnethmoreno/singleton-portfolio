@@ -27,8 +27,8 @@
 	--font: 'Open Sans';
 
 	/* Font scale */
-	--big-head: min(calc(var(--h1) * 2), 14vw);
-	--big-sub-head: clamp(var(--h4), 8vw, var(--h1));
+	--big-head: min(calc(var(--h1) * 1.5), 14vw);
+	--big-sub-head: clamp(var(--h4), 8vw, var(--h2));
 	--h1: 3.052rem;
 	--h2: 2.441rem;
 	--h3: 1.953rem;
@@ -56,5 +56,5 @@
 /* Theme Dark */
 [data-theme='dark'] {
   --primary: var(--space-cadet);
-	--accent: var(--periwinkle-crayola);
+	--accent: var(--ghost-white);
 }

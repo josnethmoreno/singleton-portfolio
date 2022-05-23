@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from 'uuid'
-import { work } from '@/data.js'
-import Card from '@/components/elements/Card'
-import '@/stylesheets/sections/Work.css'
+import { work } from '/src/data.js'
+import Card from '/src/components/elements/Card'
+import '/src/stylesheets/sections/Work.css'
 
 
  const Work = () => {

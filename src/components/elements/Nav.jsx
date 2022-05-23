@@ -1,9 +1,11 @@
-import { useState, useRef } from 'react'
-import useLocalStorage from 'use-local-storage';
-import { RiMoonLine,  RiMenuFill} from "react-icons/ri";
-import '@/stylesheets/elements/Nav.css'
+import { useState, useRef, useContext } from 'react'
+import { RiMoonLine, RiSunLine, RiMenuFill, RiCloseLine} from "react-icons/ri"
+import { ThemeContext } from '/src/contexts/ThemeContext.jsx'
+import '/src/stylesheets/elements/Nav.css'
 
 const Nav = () => {
+	const { theme, switchTheme } = useContext(ThemeContext)
+
 	const [menu, setMenu] = useState(false);
 
 	(menu)
@@ -35,10 +37,10 @@ const Nav = () => {
 			</div>
 			<div className="Nav-buttons">
 				<button className="Nav-switch" onClick={() => switchTheme()}>
-					<RiMoonLine />
+					{ (theme === 'light') ? <RiSunLine /> : <RiMoonLine /> }
 				</button>
 				<button className="Nav-toggle" onClick={() => setMenu(prevMenu => !prevMenu)}>
-					<RiMenuFill />
+					{ (menu) ?  <RiCloseLine /> : <RiMenuFill /> }
 				</button>
 			</div>
 		</nav>

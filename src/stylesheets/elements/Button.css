@@ -1,8 +1,11 @@
 .Button{
-	padding: .8rem 2.2rem;
 	color: var(--primary);
 	background-color: var(--accent);
 	font-weight: var(--bold);
+}
+
+.Button-link{
+	padding: .8rem 2.2rem;
 }
 
 .Button-text{

@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from 'uuid'
-import { stack } from '@/data.js'
+import { stack } from '/src/data.js'
 import List from '../elements/List.jsx';
-import '@/stylesheets/sections/Stack.css'
+import '/src/stylesheets/sections/Stack.css'
 
 const Stack = () => {
 	return(

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { RiArrowUpSLine } from "react-icons/ri"
-import '@/stylesheets/elements/ScrollToTop.css'
+import '/src/stylesheets/elements/ScrollToTop.css'
 
 const ScrollToTop = () => {
 	const [isVisible, setIsVisible] = useState(false)

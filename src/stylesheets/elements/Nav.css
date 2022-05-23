@@ -16,8 +16,7 @@
 	right: -100%;
 	width: 100vw;
 	height: 100vh;
-	transition: .3s cubic-bezier(.5, .5, .53, .57);
-	z-index: 2;
+	transition: .3s transform cubic-bezier(.5, .5, .53, .57);
 }
 
 .Nav-menu[data-show="true"]{
@@ -34,11 +33,11 @@
 	width: 80%;
 	height: 100%;
 	background-color: var(--primary);
-	transition: .3s ease;
+	transition: .2s box-shadow ease;
 }
 
 .Nav-menu[data-show="true"] .Nav-menu-wrapper{
-	box-shadow: -10vw 0px 50px -1px #00000022;
+	box-shadow: -20vw 0px 30px -1px #00000033;
 }
 
 .Nav-link{
@@ -57,10 +56,20 @@
 
 .Nav-switch{
 	font-size: 1.5rem;
+	transition: .2s ease;
+}
+
+.Nav-switch:active{
+	transform: translateY(-2px);
 }
 
 .Nav-toggle{
 	font-size: 2rem;
+	transition: .2s ease;
+}
+
+.Nav-toggle:active{
+	transform: translateY(-2px);
 }
 
 @media (min-width: 576px) {

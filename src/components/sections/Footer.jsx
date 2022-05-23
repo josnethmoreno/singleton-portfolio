@@ -1,13 +1,25 @@
+import axios from 'axios'
+import React from 'react';
 import { RiGitBranchLine, RiStarFill } from "react-icons/ri";
-import ScrollToTop from '@/components/elements/ScrollToTop'
-import '@/stylesheets/sections/Footer.css'
+import ScrollToTop from '/src/components/elements/ScrollToTop'
+import '/src/stylesheets/sections/Footer.css'
 
 const Footer = () => {
+
+	const url = 'https://api.github.com/repos/josnethmoreno/singleton';
+	const [github, setGithub] = React.useState(false);
+
+	React.useEffect(() => {
+    axios.get(url).then((res) => {
+      setGithub(res.data);
+    });
+  }, []);
+
 	return (
 		<footer className="Footer">
 			<div className="container">
 				<p className="Footer-author">
-					Design & Built by
+					Design & Built by:
 					<a
 						href="https://www.josnethmoreno.vercel.app" 
 						className="Footer-author-link"
@@ -21,13 +33,13 @@ const Footer = () => {
 						<span className="Footer-stats-icon">
 							<RiGitBranchLine />
 						</span>
-						21
+						{(github) && github.forks_count}
 					</div>					
 					<div className="Footer-stats-star">
 						<span className="Footer-stats-icon">
 							<RiStarFill />
 						</span>
-						100
+						{(github) && github.stargazers_count}
 					</div>					
 				</div>
 				<ScrollToTop />

@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from 'uuid'
-import Icon from '@/components/elements/Icon.jsx'
-import '@/stylesheets/elements/List.css'
+import Icon from '/src/components/elements/Icon.jsx'
+import '/src/stylesheets/elements/List.css'
 
 const List = ({ name, items }) => {
 	return(
