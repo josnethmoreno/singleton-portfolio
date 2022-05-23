@@ -40,7 +40,7 @@ const Nav = () => {
 					{ (theme === 'light') ? <RiSunLine /> : <RiMoonLine /> }
 				</button>
 				<button className="Nav-toggle" onClick={() => setMenu(prevMenu => !prevMenu)}>
-					{ (menu) ?  <RiCloseLine /> : <RiMenuFill /> }
+					{ (menu) ? <RiCloseLine /> : <RiMenuFill /> }
 				</button>
 			</div>
 		</nav>
