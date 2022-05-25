@@ -13,12 +13,13 @@ const social = [
 	{ icon: icon.SiInstagram, link: 'https://www.instagram.com/' },
 ];
 
-const brand = 'Carlos'
+const brand = 'Singleton'
+
 
 const work = [
 	{
 		name: 'Todo app',
-		description: 'Vestibulum mattis tincidunt ligula in tem vestibulum tristique sapien at odio euis condimentum condimentum.',
+		description: 'Phasellus metus mi, scelerisque eu volutpat non, posuere et massa. Nunc hendrerit, augue non fringilla mattis.',
 		stack: [
 			{ icon: icon.SiHtml5, name: 'HTML' },
 			{ icon: icon.SiCss3, name: 'CSS' },
@@ -30,7 +31,7 @@ const work = [
 	},
 	{
 		name: 'Pokedex',
-		description: 'Vestibulum mattis tincidunt ligula in tem vestibulum tristique sapien at odio euis condimentum condimentum.',
+		description: 'Etiam eget volutpat risus. Nam magna bibendum a metus dignissim, id eleifend libero luctus molestie eget.',
 		stack: [
 			{ icon: icon.SiHtml5, name: 'HTML' },
 			{ icon: icon.SiCss3, name: 'CSS' },
@@ -42,7 +43,7 @@ const work = [
 	},
 	{
 		name: 'E-Commerce',
-		description: 'Vestibulum mattis tincidunt ligula in tem vestibulum tristique sapien at odio euis condimentum condimentum.',
+		description: 'Nullam id mauris auctor, sollicitudin sapien id, sagittis turpis proin et nunc sempe, venenatis erat.',
 		stack: [
 			{ icon: icon.SiHtml5, name: 'HTML' },
 			{ icon: icon.SiCss3, name: 'CSS' },
@@ -53,8 +54,8 @@ const work = [
 		linkGithub: 'https://github.com',
 	},
 	{
-		name: 'Twitter Clon',
-		description: 'Vestibulum mattis tincidunt ligula in tem vestibulum tristique sapien at odio euis condimentum condimentum.',
+		name: 'Twitter clon',
+		description: 'Cras leo mauris, gravida vel lectus ac, congue luctus odio. Sed varius varius est eget convallis sagittis sit amet.',
 		stack: [
 			{ icon: icon.SiHtml5, name: 'HTML' },
 			{ icon: icon.SiCss3, name: 'CSS' },

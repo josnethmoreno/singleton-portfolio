@@ -37,7 +37,7 @@ const Nav = () => {
 			</div>
 			<div className="Nav-buttons">
 				<button className="Nav-switch" onClick={() => switchTheme()}>
-					{ (theme === 'light') ? <RiSunLine /> : <RiMoonLine /> }
+					{ (theme === 'light') ? <RiMoonLine /> : <RiSunLine /> }
 				</button>
 				<button className="Nav-toggle" onClick={() => setMenu(prevMenu => !prevMenu)}>
 					{ (menu) ? <RiCloseLine /> : <RiMenuFill /> }
