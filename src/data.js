@@ -8,7 +8,7 @@ const profile = {
 
 const social = [
 	{ icon: icon.SiGithub, link: 'https://github.com' },
-	{ icon: icon.SiMedium, link: 'https://www.medium.com/' },
+	{ icon: icon.SiCodepen, link: 'https://www.medium.com/' },
 	{ icon: icon.SiTwitter, link: 'https://www.twitter.com/' },
 	{ icon: icon.SiInstagram, link: 'https://www.instagram.com/' },
 ];
@@ -74,10 +74,10 @@ const stack = [
 		items: [
 			{ icon: icon.SiHtml5, name: 'HTML' },
 			{ icon: icon.SiCss3, name: 'CSS' },
-			{ icon: icon.SiJavascript, name: 'Javascript' },
 			{ icon: icon.SiBootstrap, name: 'Bootstrap', },
-			{ icon: icon.SiTailwindcss, name: 'Tailwind', },
-			{ icon: icon.SiVuedotjs, name: 'VueJS', },
+			{ icon: icon.SiJavascript, name: 'Javascript' },
+			{ icon: icon.SiTypescript, name: 'Typescript' },
+			{ icon: icon.SiReact, name: 'React', },
 		],
 	},
 	{
@@ -85,9 +85,8 @@ const stack = [
 		items: [
 			{ icon: icon.SiNodedotjs, name: 'NodeJS' },
 			{ icon: icon.SiDeno, name: 'Deno' },
-			{ icon: icon.SiGraphql, name: 'Graphql' },
-			{ icon: icon.SiFirebase, name: 'Firebase', },
 			{ icon: icon.SiMongodb, name: 'MongoDB', },
+			{ icon: icon.SiFirebase, name: 'Firebase', },
 		],
 	},
 ]
