@@ -18,11 +18,6 @@
 		14%, 
 		90%);
 
-	--periwinkle-crayola: hsl(
-		var(--theme-hue), 
-		69%,
-		85%);
-
 	/* Typography */
 	--font: 'Open Sans';
 
