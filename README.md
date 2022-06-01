@@ -6,7 +6,7 @@ Singleton is a Minimal Portfolio Template built with ReactJS, easy to use
 <img src="src/images/home.png" alt="Home UI">
 
 
-## Pre-Requisites
+## Prerequisites
 
 Install PNPM or NPM
 * pnpm
