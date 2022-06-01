@@ -6,6 +6,8 @@ Singleton is a Minimal Portfolio Template built with React and Vite, easy to use
 
 <img src="src/images/home.png" alt="Home UI">
 
+[Live Preview](https://singleton-portfolio.netlify.app/)
+
 
 ## Prerequisites
 
