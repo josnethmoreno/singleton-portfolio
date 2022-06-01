@@ -6,7 +6,7 @@ Singleton is a Minimal Portfolio Template built with ReactJS, easy to use
 <img src="src/images/home.png" alt="Home UI">
 
 
-## Prerequisites
+## Pre-Requisites
 
 Install PNPM or NPM
 * pnpm
@@ -26,7 +26,7 @@ Install PNPM or NPM
 
 1. Clone the repo
    ```sh
-   git clone https://www.github.com/josnethmoreno/singleton.git
+   git clone https://github.com/josnethmoreno/singleton.git
    ```
    
 2. Install PNPM packages
