@@ -32,7 +32,7 @@ Install NPM or PNPM
    git clone https://github.com/josnethmoreno/singleton.git
    ```
    
-2. Install PNPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
