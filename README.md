@@ -11,17 +11,17 @@ Singleton is a Minimal Portfolio Template built with React and Vite, easy to use
 
 ## Prerequisites
 
-Install PNPM or NPM
-* pnpm
+Install NPM or PNPM
+* npm
   ```sh
-  npm install -g pnpm
+  npm install npm@latest -g
   ```
  
   Or
   
-* npm
+* pnpm
   ```sh
-  npm install npm@latest -g
+  npm install -g pnpm
   ```
 
 
@@ -34,12 +34,12 @@ Install PNPM or NPM
    
 2. Install PNPM packages
    ```sh
-   pnpm install
+   npm install
    ```
    
 3. Start the development server
    ```sh
-   pnpm run dev
+   npm run dev
    ```
 
 ## Usage
@@ -52,12 +52,12 @@ Install PNPM or NPM
 
 1. Generate a full static production build
    ```sh
-   pnpm run build
+   npm run build
    ```
    
 2. Preview the site as it will appear once deployed
    ```sh
-   pnpm run preview
+   npm run preview
    ```
 
 ## License
