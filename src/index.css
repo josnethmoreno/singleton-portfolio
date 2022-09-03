@@ -68,12 +68,6 @@ button{
 }
 
 .container{
-	padding: 0 1.4rem;
-	margin: 0 auto;
-	max-width: 1024px;
-}
-
-.container-sm {
 	margin: 0 auto;
 	max-width: 860px;
 }

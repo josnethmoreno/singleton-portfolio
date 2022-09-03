@@ -8,7 +8,7 @@ import { profile } from '/src/data.js'
 
 	return(
 		<section className="Home section" id="home">
-			<div className="container-sm">
+			<div className="container">
 				<div className="Home-caption">
 					<span className="Home-hi">Hi I'm</span>
 					<h1 className="Home-h1">{name}</h1>

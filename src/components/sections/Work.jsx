@@ -9,7 +9,6 @@ import '/src/stylesheets/sections/Work.css'
 		<section className="Work section" id="work">
 			<div className="container">
 				<h2 className="Work-h2 section-head">Work.</h2>
-				<div className="container-sm">
 					<div className="Work-wrapper">
 						{
 							work.map((c) => 
@@ -24,7 +23,6 @@ import '/src/stylesheets/sections/Work.css'
 							)
 						}
 					</div>
-				</div>
 			</div>
 		</section>
 	);

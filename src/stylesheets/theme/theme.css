@@ -1,55 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
 
-:root{
-	/*Color HSL*/
-	--theme-hue: 225deg;
-	--theme-sat: 26%;
-	--theme-lit: 21%;
+:root {
+  /*Color HSL*/
+  --theme-hue: 225deg;
+  --theme-sat: 26%;
+  --theme-lit: 21%;
 
-	/* Color palette */
-	--space-cadet: hsl(
-		var(--theme-hue), 
-		var(--theme-sat), 
-		var(--theme-lit)
-	);
+  /* Color palette */
+  --space-cadet: hsl(var(--theme-hue), var(--theme-sat), var(--theme-lit));
+  --ghost-white: hsl(var(--theme-hue), 14%, 90%);
 
-	--ghost-white: hsl(
-		var(--theme-hue), 
-		14%, 
-		90%);
+  /* Typography */
+  --font: "Open Sans";
 
-	/* Typography */
-	--font: 'Open Sans';
+  /* Font scale */
+  --big-head: min(calc(var(--h1) * 1.5), 14vw);
+  --big-sub-head: clamp(var(--h4), 8vw, var(--h2));
+  --h1: 3.052rem;
+  --h2: 2.441rem;
+  --h3: 1.953rem;
+  --h4: 1.25rem;
+  --text-small: 0.8rem;
 
-	/* Font scale */
-	--big-head: min(calc(var(--h1) * 1.5), 14vw);
-	--big-sub-head: clamp(var(--h4), 8vw, var(--h2));
-	--h1: 3.052rem;
-	--h2: 2.441rem;
-	--h3: 1.953rem;
-	--h4: 1.25rem;
-	--text-small: 0.8rem;
+  /* Font Weight */
+  --light: 300;
+  --normal: 400;
+  --bold: 700;
 
-	/* Font Weight */
-	--light: 300;
-	--normal: 400;
-	--bold: 700;
-
-	/* Margins Levels */
-	--margin-1: 120px;
-	--margin-2: 60px;
-	--margin-3: 30px;
-	--margin-4: 15px;
-}	
+  /* Margins Levels */
+  --margin-1: 100px;
+  --margin-2: 60px;
+  --margin-3: 30px;
+  --margin-4: 15px;
+}
 
 /* Theme Light */
-:root{
-	--primary: var(--ghost-white);
-	--accent: var(--space-cadet);
+:root {
+  --primary: var(--ghost-white);
+  --accent: var(--space-cadet);
 }
 
 /* Theme Dark */
-[data-theme='dark'] {
+[data-theme="dark"] {
   --primary: var(--space-cadet);
-	--accent: var(--ghost-white);
+  --accent: var(--ghost-white);
 }
