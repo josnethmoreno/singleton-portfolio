@@ -11,19 +11,19 @@ import '/src/App.css'
 import '/src/stylesheets/theme/theme.css'
 
 function App() {
-  const { theme } = useContext(ThemeContext);
+	const { theme } = useContext(ThemeContext)
 
-  return (
-    <div className="App" id="top" data-theme={theme}>
-      <Header />
-      <Home />
-      <Work />
-      <Stack />
-      <Contact />
-      <Footer />
-      <ScrollToTop />
-    </div>
-  )
+	return (
+		<div className='App' id='top' data-theme={theme}>
+			<Header />
+			<Home />
+			<Work />
+			<Stack />
+			<Contact />
+			<Footer />
+			<ScrollToTop />
+		</div>
+	)
 }
 
 export default App
